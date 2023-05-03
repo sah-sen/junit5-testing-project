@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Compare Arrays">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/DietPlannerTest.java" afterDir="false" />
+    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Before and after all">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/diet-recommended-input-data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/healthycoderapp/BMICalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/healthycoderapp/BMICalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,65 +47,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/smseneviratne/IdeaProjects/HealthyCoderApp/src/main/resources"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.healthycoderapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect">
-    <configuration name="BMICalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HealthyCoderApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.healthycoderapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
-      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BMICalculatorTest.returnNullWhenCoderListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HealthyCoderApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.healthycoderapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
-      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
-      <option name="METHOD_NAME" value="returnNullWhenCoderListIsEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BMICalculatorTest.shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HealthyCoderApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.healthycoderapp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
-      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrueCSVFile">
     <configuration name="BMICalculatorTest.shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HealthyCoderApp" />
       <extension name="coverage">
@@ -114,6 +77,54 @@
       <option name="PACKAGE_NAME" value="com.healthycoderapp" />
       <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
       <option name="METHOD_NAME" value="shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BMICalculatorTest.testingIsDietRecommentedIsTrue (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthyCoderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.healthycoderapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
+      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
+      <option name="METHOD_NAME" value="testingIsDietRecommentedIsTrue(java.lang.Double,java.lang.Double)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BMICalculatorTest.testingIsDietRecommentedIsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthyCoderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.healthycoderapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
+      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
+      <option name="METHOD_NAME" value="testingIsDietRecommentedIsTrue(java.lang.Double)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BMICalculatorTest.testingIsDietRecommentedIsTrueCSVFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthyCoderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.healthycoderapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
+      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
+      <option name="METHOD_NAME" value="testingIsDietRecommentedIsTrueCSVFile(java.lang.Double,java.lang.Double)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrueCSVFile" />
+        <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrue (1)" />
+        <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrue" />
         <item itemvalue="JUnit.DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect" />
         <item itemvalue="JUnit.BMICalculatorTest.shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" />
-        <item itemvalue="JUnit.BMICalculatorTest.returnNullWhenCoderListIsEmpty" />
-        <item itemvalue="JUnit.BMICalculatorTest.shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty" />
-        <item itemvalue="JUnit.BMICalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683122974840</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Before each">
+      <created>1683129581420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683129581420</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Before and after all">
+      <created>1683130072558</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683130072558</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -206,6 +231,8 @@
     <MESSAGE value="Multiple Assertions" />
     <MESSAGE value="Test null values" />
     <MESSAGE value="Compare Arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compare Arrays" />
+    <MESSAGE value="Before each" />
+    <MESSAGE value="Before and after all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before and after all" />
   </component>
 </project>
