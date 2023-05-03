@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" afterDir="false" />
+    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Assert True and False">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
       <recent name="com.healthycoderapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BMICalculatorTest">
+  <component name="RunManager" selected="JUnit.BMICalculatorTest.shouldThrowArithmeticExceptionWhenHeightIsZero">
     <configuration name="BMICalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HealthyCoderApp" />
       <extension name="coverage">
@@ -71,6 +67,22 @@
       <option name="PACKAGE_NAME" value="com.healthycoderapp" />
       <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BMICalculatorTest.shouldThrowArithmeticExceptionWhenHeightIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthyCoderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.healthycoderapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
+      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
+      <option name="METHOD_NAME" value="shouldThrowArithmeticExceptionWhenHeightIsZero" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BMICalculatorTest.shouldThrowArithmeticExceptionWhenHeightIsZero" />
         <item itemvalue="JUnit.BMICalculatorTest" />
         <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrue" />
       </list>
@@ -114,11 +127,19 @@
       <option name="project" value="LOCAL" />
       <updated>1683106418274</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Assert True and False">
+      <created>1683109052091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683109052091</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Assert True and False" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assert True and False" />
   </component>
 </project>
