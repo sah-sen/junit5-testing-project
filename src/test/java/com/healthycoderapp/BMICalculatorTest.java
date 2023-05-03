@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BMICalculatorTest {
+
+
     @Test
     @DisplayName("Testing isDietRecommented is true")
     public void testingIsDietRecommentedIsTrue() {
@@ -19,4 +21,15 @@ class BMICalculatorTest {
        // assertTrue(BMICalculator.isDietRecommended(89.0,1.65));
         }
 
+    @Test
+    @DisplayName("Returns false for isDiedRecommended")
+    public void returnsFalseForIsDiedRecommended() {
+        //given
+        double weight = 50.0;
+        double height = 1.92;
+        //when
+        boolean recomended = BMICalculator.isDietRecommended(weight,height);
+        //then
+        assertFalse(recomended);
+        }
 }
