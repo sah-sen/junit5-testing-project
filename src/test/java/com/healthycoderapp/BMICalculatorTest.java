@@ -5,6 +5,10 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,19 +27,61 @@ class BMICalculatorTest {
         System.out.println("Used to close databases but this is a simple after all");
     }
 
-
-    @Test
+//the number in the curly brackets refers to the order. so 0th value is weight(89.0) and 1st is height (172)
+    @ParameterizedTest(name = "weight={0}, height={1}")
+    //csv stands for comma separated values
+    @CsvSource(value = {"89.0, 1.72","95.0, 1.75", "110, 1.78" })
     @DisplayName("Testing isDietRecommented is true")
-    public void testingIsDietRecommentedIsTrue() {
+    public void testingIsDietRecommentedIsTrueCSV1(Double coderWeight, Double coderHeight) {
         //given
-        double weight = 89.0;
-        double height = 1.72;
+        double weight = coderWeight;
+        double height = coderHeight;
+
         //when
         boolean recomended = BMICalculator.isDietRecommended(weight,height);
         //then
         assertTrue(recomended);
        // assertTrue(BMICalculator.isDietRecommended(89.0,1.65));
         }
+
+    //file version
+
+    //the number in the curly brackets refers to the order. so 0th value is weight(89.0) and 1st is height (172)
+    @ParameterizedTest(name = "weight={0}, height={1}")
+    //the num lines to skip will skip the first row, which contains the headings
+    @CsvFileSource(resources ="/diet-recommended-input-data.csv", numLinesToSkip =1)
+    @DisplayName("Testing isDietRecommented is true")
+    public void testingIsDietRecommentedIsTrueCSVFile(Double coderWeight, Double coderHeight) {
+        //given
+        double weight = coderWeight;
+        double height = coderHeight;
+
+        //when
+        boolean recomended = BMICalculator.isDietRecommended(weight,height);
+        //then
+        assertTrue(recomended);
+        // assertTrue(BMICalculator.isDietRecommended(89.0,1.65));
+    }
+
+
+    //Value Source version
+    @ParameterizedTest
+    //Value source contains values that are to be injected into the test. works for one veriable
+    @ValueSource (doubles = {70.0, 89.0,95.0,110.0})
+    @DisplayName("Testing isDietRecommented is true")
+    public void testingIsDietRecommentedIsTrueVS(Double coderWeight) {
+        //given
+        double weight = coderWeight;
+        double height = 1.7;
+
+        //when
+        boolean recomended = BMICalculator.isDietRecommended(weight,height);
+        //then
+        assertTrue(recomended);
+        // assertTrue(BMICalculator.isDietRecommended(89.0,1.65));
+    }
+
+
 
     @Test
     @DisplayName("Returns false for isDiedRecommended")
