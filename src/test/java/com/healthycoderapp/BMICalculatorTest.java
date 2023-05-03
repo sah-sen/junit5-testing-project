@@ -1,5 +1,7 @@
 package com.healthycoderapp;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
@@ -10,6 +12,16 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BMICalculatorTest {
+
+    @BeforeAll
+    static void beforeAll(){
+        System.out.println("Setup for databases would happen here. but this is a simple before all ");
+    }
+
+    @AfterAll
+    static void afterAll(){
+        System.out.println("Used to close databases but this is a simple after all");
+    }
 
 
     @Test
