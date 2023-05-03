@@ -1,5 +1,7 @@
 package com.healthycoderapp;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
@@ -10,6 +12,16 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BMICalculatorTest {
+
+    @BeforeAll
+    static void beforeAll(){
+        System.out.println("Setup for databases would happen here. but this is a simple before all ");
+    }
+
+    @AfterAll
+    static void afterAll(){
+        System.out.println("Used to close databases but this is a simple after all");
+    }
 
 
     @Test
@@ -81,6 +93,22 @@ class BMICalculatorTest {
         assertNull(coderWorstBMI);
         }
 
+    @Test
+    @DisplayName("should return the correct BMO score array when not empty")
+    public void shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty() {
+        //given
+        List<Coder> coders = new ArrayList<>();
+        coders.add(new Coder(1.8, 60.0));
+        coders.add(new Coder(1.82, 98.0));
+        coders.add(new Coder(1.82, 64.7));
+        double[] expected = {18.52, 29.59, 19.53};
+
+        //when
+        double[] bmiScores =BMICalculator.getBMIScores(coders);
+
+        //then
+        assertArrayEquals(expected, bmiScores);
+    }
 
 
 }
