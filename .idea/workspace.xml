@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Test null values">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" afterDir="false" />
+    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Compare Arrays">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/DietPlannerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="com.healthycoderapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BMICalculatorTest.shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty">
+  <component name="RunManager" selected="JUnit.DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect">
     <configuration name="BMICalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HealthyCoderApp" />
       <extension name="coverage">
@@ -119,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BMICalculatorTest.shouldThrowArithmeticExceptionWhenHeightIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HealthyCoderApp" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.healthycoderapp" />
-      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
-      <option name="METHOD_NAME" value="shouldThrowArithmeticExceptionWhenHeightIsZero" />
+      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.DietPlannerTest" />
+      <option name="METHOD_NAME" value="shouldReturnCorrectDietPlanWhenCoderIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect" />
         <item itemvalue="JUnit.BMICalculatorTest.shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" />
         <item itemvalue="JUnit.BMICalculatorTest.returnNullWhenCoderListIsEmpty" />
         <item itemvalue="JUnit.BMICalculatorTest.shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty" />
         <item itemvalue="JUnit.BMICalculatorTest" />
-        <item itemvalue="JUnit.BMICalculatorTest.shouldThrowArithmeticExceptionWhenHeightIsZero" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683121516963</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Compare Arrays">
+      <created>1683122974840</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683122974840</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,6 +205,7 @@
     <MESSAGE value="Assert Throws + Lambda Expression" />
     <MESSAGE value="Multiple Assertions" />
     <MESSAGE value="Test null values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test null values" />
+    <MESSAGE value="Compare Arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compare Arrays" />
   </component>
 </project>
