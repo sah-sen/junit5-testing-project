@@ -70,6 +70,16 @@ class BMICalculatorTest {
                 () ->assertEquals(98.0, coderWorstBMI.getWeight())
         );
     }
+    @Test
+    @DisplayName("return null when coder list is empty")
+    public void returnNullWhenCoderListIsEmpty() {
+        //given
+        List<Coder> coders = new ArrayList<>();
+        //when
+        Coder coderWorstBMI = BMICalculator.findCoderWithWorstBMI(coders);
+        //then
+        assertNull(coderWorstBMI);
+        }
 
 
 

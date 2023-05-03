@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Assert Throws + Lambda Expression">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/healthycoderapp/Coder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/healthycoderapp/Coder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/healthycoderapp/Coder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/healthycoderapp/Coder.java" afterDir="false" />
+    <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="Multiple Assertions">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +55,7 @@
       <recent name="com.healthycoderapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BMICalculatorTest.shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty">
+  <component name="RunManager" selected="JUnit.BMICalculatorTest.returnNullWhenCoderListIsEmpty">
     <configuration name="BMICalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HealthyCoderApp" />
       <extension name="coverage">
@@ -70,6 +67,22 @@
       <option name="PACKAGE_NAME" value="com.healthycoderapp" />
       <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BMICalculatorTest.returnNullWhenCoderListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthyCoderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.healthycoderapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.healthycoderapp" />
+      <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
+      <option name="METHOD_NAME" value="returnNullWhenCoderListIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BMICalculatorTest.returnNullWhenCoderListIsEmpty" />
         <item itemvalue="JUnit.BMICalculatorTest.shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty" />
         <item itemvalue="JUnit.BMICalculatorTest" />
         <item itemvalue="JUnit.BMICalculatorTest.shouldThrowArithmeticExceptionWhenHeightIsZero" />
@@ -161,13 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683110592452</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Multiple Assertions">
+      <created>1683118815193</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683118815193</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Assert True and False" />
     <MESSAGE value="Assert Throws + Lambda Expression" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assert Throws + Lambda Expression" />
+    <MESSAGE value="Multiple Assertions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple Assertions" />
   </component>
 </project>
