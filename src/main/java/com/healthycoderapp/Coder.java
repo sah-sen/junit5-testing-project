@@ -20,6 +20,7 @@ public class Coder {
 		this.age = age;
 		this.gender = gender;
 	}
+
 	
 	public double getHeight() {
 		return height;

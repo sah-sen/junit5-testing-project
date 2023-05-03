@@ -4,6 +4,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BMICalculatorTest {
@@ -47,6 +50,27 @@ class BMICalculatorTest {
         assertThrows(ArithmeticException.class,executable );
 
         }
+
+
+    @Test
+    @DisplayName("should return coder with the worst bmi when list is not empty")
+    public void shouldReturnCoderWithTheWorstBmiWhenListIsNotEmpty() {
+        //given
+        List<Coder> coders = new ArrayList<>();
+        coders.add(new Coder(1.8, 60.0));
+        coders.add(new Coder(1.82, 98.0));
+        coders.add(new Coder(1.82, 64.7));
+
+        //when
+        Coder coderWorstBMI = BMICalculator.findCoderWithWorstBMI(coders);
+        //then
+        //Both tests will run even if the first fails
+        assertAll(
+                () ->assertEquals(1.82, coderWorstBMI.getHeight()),
+                () ->assertEquals(98.0, coderWorstBMI.getWeight())
+        );
+    }
+
 
 
 }
