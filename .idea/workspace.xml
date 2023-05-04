@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7534d904-ecd5-4f45-90b2-4de0879b1e15" name="Changes" comment="CSV file testing and injection">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/BMICalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/DietPlannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/healthycoderapp/DietPlannerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +62,8 @@
       <recent name="com.healthycoderapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect">
-    <configuration name="BMICalculatorTest.shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BMICalculatorTest.shouldReturnCoderWithWorstBmiIn1MsWhenCoderListHas10000Elements">
+    <configuration name="BMICalculatorTest.shouldReturnCoderWithWorstBmiIn1MsWhenCoderListHas10000Elements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HealthyCoderApp" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +73,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.healthycoderapp" />
       <option name="MAIN_CLASS_NAME" value="com.healthycoderapp.BMICalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" />
+      <option name="METHOD_NAME" value="shouldReturnCoderWithWorstBmiIn1MsWhenCoderListHas10000Elements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BMICalculatorTest.shouldReturnCoderWithWorstBmiIn1MsWhenCoderListHas10000Elements" />
         <item itemvalue="JUnit.DietPlannerTest.shouldReturnCorrectDietPlanWhenCoderIsCorrect" />
         <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrueCSVFile" />
         <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrue (1)" />
         <item itemvalue="JUnit.BMICalculatorTest.testingIsDietRecommentedIsTrue" />
-        <item itemvalue="JUnit.BMICalculatorTest.shouldReturnTheCorrectBmoScoreArrayWhenNotEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683134109169</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CSV file testing and injection">
+      <created>1683135475812</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683135475812</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

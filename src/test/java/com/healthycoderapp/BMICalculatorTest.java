@@ -10,6 +10,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -108,7 +109,7 @@ class BMICalculatorTest {
         Executable executable = () -> BMICalculator.isDietRecommended(weight,height);
 
         //then
-        assertThrows(ArithmeticException.class,executable );
+        assertThrows(ArithmeticException.class, executable);
 
         }
 
@@ -131,6 +132,25 @@ class BMICalculatorTest {
                 () ->assertEquals(98.0, coderWorstBMI.getWeight())
         );
     }
+    
+    @Test
+    @DisplayName("should return coder with worst bmi in 50ms when coder list has 10000 elements")
+    public void shouldReturnCoderWithWorstBmiIn50MsWhenCoderListHas10000Elements() {
+        //given
+        List<Coder> coders = new ArrayList<>();
+        //creates 10000 unique coders in an arraylist
+        for(int i=0; i<10000; i++){
+            coders.add(new Coder(1.0 + i, 10.0 +0));
+        }
+
+        //when
+        Executable executable = () -> BMICalculator.findCoderWithWorstBMI(coders);
+
+        //then
+        assertTimeout(Duration.ofMillis(50), executable);
+        }
+
+
     @Test
     @DisplayName("return null when coder list is empty")
     public void returnNullWhenCoderListIsEmpty() {
