@@ -10,4 +10,7 @@ Test Class Overview
 
 BMICalculatorTest
 
+Contains 3 nested classes which each test a method.
+
+
 DietPlannerTest
